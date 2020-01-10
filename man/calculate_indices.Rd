@@ -2,16 +2,18 @@
 % Please edit documentation in R/calculate_indices.R
 \name{calculate_indices}
 \alias{calculate_indices}
-\title{Title}
+\title{Calculate analysis programs from within R}
 \usage{
-calculate_indices(file)
+calculate_indices(file, base_output_directory)
 }
 \arguments{
-\item{file}{}
+\item{file}{wave file name}
+
+\item{base_output_directory}{place to put AP output}
 }
 \value{
 
 }
 \description{
-Title
+Calculate analysis programs from within R
 }

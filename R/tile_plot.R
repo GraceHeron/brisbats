@@ -9,7 +9,11 @@
 #' @export
 #'
 #' @examples
-tile_plot <- function(x, chosen_indices, sample_length, mytitle = F){
+tile_plot <- function(x,
+                      chosen_indices = c("ACI", "ENT", "BGN", "CVR", "DIF", "EVN", "PMN", "R3D", "RHZ",
+                                            "RNG", "RPS", "RVT", "SPT", "SUM"),
+                      sample_length,
+                      mytitle = F){
 
   if(length(chosen_indices) == 1){
     ggplot(filter(x, type %in% chosen_indices),

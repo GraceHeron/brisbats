@@ -4,7 +4,13 @@
 \alias{tile_plot}
 \title{Easy tile plot}
 \usage{
-tile_plot(x, chosen_indices, sample_length, mytitle = F)
+tile_plot(
+  x,
+  chosen_indices = c("ACI", "ENT", "BGN", "CVR", "DIF", "EVN", "PMN", "R3D", "RHZ",
+    "RNG", "RPS", "RVT", "SPT", "SUM"),
+  sample_length,
+  mytitle = F
+)
 }
 \arguments{
 \item{x}{data frame}
