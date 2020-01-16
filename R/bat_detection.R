@@ -4,8 +4,6 @@
 #'
 #' @return
 #' @export
-#'
-#' @examples
 bat_detection <- function(fwave){
   ## Stage 1: Y/N Bat detection
 

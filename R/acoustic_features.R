@@ -4,8 +4,6 @@
 #'
 #' @return
 #' @export
-#'
-#' @examples
 acoustic_features <- function(file, base_output_directory){
 
   # get just the name of the file

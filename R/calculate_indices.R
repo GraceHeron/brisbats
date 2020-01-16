@@ -5,8 +5,6 @@
 #'
 #' @return
 #' @export
-#'
-#' @examples
 calculate_indices <- function(file, base_output_directory){
 
   # get just the name of the file

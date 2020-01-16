@@ -7,8 +7,6 @@
 #'
 #' @return
 #' @export
-#'
-#' @examples
 tile_plot <- function(x,
                       chosen_indices = c("ACI", "ENT", "BGN", "CVR", "DIF", "EVN", "PMN", "R3D", "RHZ",
                                             "RNG", "RPS", "RVT", "SPT", "SUM"),
