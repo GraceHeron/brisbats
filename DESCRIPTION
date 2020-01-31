@@ -15,4 +15,5 @@ Depends:
   seewave,
   tidyverse,
   caret,
-  reshape
+  reshape,
+  tuneR

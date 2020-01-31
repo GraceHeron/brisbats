@@ -16,8 +16,11 @@ bat_detection <- function(fwave){
   ## Select peaks in bat frequency range
   bat_freq <- filter(as_tibble(fpks), freq > 40 & freq < 100)
 
+  # current duration
+  cur_len <- length(fwave_short@left)/fwave_short@samp.rate
+
   ## Initialise time vector and storage vector
-  x <- seq(0, length(fwave@left)/fwave@samp.rate*1e3, 1/(fwave@samp.rate-0.2)*1e3)
+  x <- seq(0, length(fwave@left)/fwave@samp.rate*1e3, 1/(fwave@samp.rate-(1/(cur_len-1)))*1e3)
   bat_times <- c()
 
   ## For each bat peak frequency, filter around peak and store time index
@@ -39,6 +42,11 @@ bat_detection <- function(fwave){
 
   ## Only unique times in case of overlap
   bat_times <- unique(bat_times)
+
+  if(length(x) != length(fwave@left)){
+    diff <- length(x) - length(fwave@left)
+    x <- c(x, rep(0, diff))
+  }
 
   ## Create table with waveform, time and bat pressence logical
   ftable <- tibble(wave = fwave@left, time = x, bat = FALSE)
