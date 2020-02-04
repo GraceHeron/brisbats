@@ -17,7 +17,7 @@ bat_detection <- function(fwave){
   bat_freq <- filter(as_tibble(fpks), freq > 40 & freq < 100)
 
   # current duration
-  cur_len <- length(fwave_short@left)/fwave_short@samp.rate
+  cur_len <- length(fwave@left)/fwave@samp.rate
 
   ## Initialise time vector and storage vector
   x <- seq(0, length(fwave@left)/fwave@samp.rate*1e3, 1/(fwave@samp.rate-(1/(cur_len-1)))*1e3)
