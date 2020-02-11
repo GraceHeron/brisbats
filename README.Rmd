@@ -79,15 +79,15 @@ So we get the resultant LDFC plots:
 
 ![Figure 2: ACI, ENT and EVN LDFC Plot.](figures/taiwan-aci-ent-evn-1.png){width=50%}
 
-<center>
+
 Figure 2: ACI, ENT and EVN LDFC Plot.
-</center>
+
 
 ![Figure 3: RVT, RHZ and PMN LDFC Plot.](figures/taiwan-rvt-rhz-pmn-1.png){width=50%}
 
-<center>
+
 Figure 3: RVT, RHZ and PMN LDFC Plot.
-</center>
+
 
 ## Using R 
 
