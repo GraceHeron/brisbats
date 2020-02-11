@@ -1,0 +1,25 @@
+{
+  "LongDurationSpectrogramConfig": {
+    "FreqScale": "Linear",
+    "ColorMap1": "ACI-ENT-EVN",
+    "ColorMap2": "BGN-PMN-SPT",
+    "ColourFilter": -0.25,
+    "XAxisTicIntervalSeconds": 3600.0,
+    "YAxisTicInterval": 1000,
+    "ConfigPath": null,
+    "GenericConfig": null
+  },
+  "RecordingExtension": ".wav",
+  "BackgroundFilterCoeff": -0.25,
+  "FrameLength": 1024,
+  "FrameStep": 1024,
+  "RecordingStartDate": null,
+  "AnalysisStartOffset": "00:00:00",
+  "MaximumSegmentDuration": "00:01:00",
+  "SampleRateOriginal": 384000,
+  "SampleRateResampled": 500000,
+  "IndexCalculationDuration": "00:00:01",
+  "BgNoiseNeighbourhood": "00:00:01",
+  "RecordingBasename": "botanic_gardens",
+  "RecordingDuration": "00:01:00"
+}
