@@ -209,6 +209,8 @@ sample_length <- length(fwave@left)/fwave@samp.rate
 chosen_indices <- c("ACI", "ENT", "EVN", "PMN", "RHZ", "RVT")
 ```
 
+Plot the standardised acoustic indices to try and find traces of wildlife. This sample recording was done during the day in the Brisbane Botanic Gardens so there is unlikely to be anything other than a few Ibis calls.
+
 ```{r echo=F}
 ggplot(dplyr::filter(atable, type %in% chosen_indices),
            aes(x = Index, y = Scale2, fill = value)) +

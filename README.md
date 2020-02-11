@@ -68,14 +68,12 @@ So we get the resultant LDFC plots:
 
 <img src="figures/taiwan-aci-ent-evn-1.png" alt="Figure 2: ACI, ENT and EVN LDFC Plot." style="width:50.0%" />
 
-<center>
 Figure 2: ACI, ENT and EVN LDFC Plot.
-</center>
+
 <img src="figures/taiwan-rvt-rhz-pmn-1.png" alt="Figure 3: RVT, RHZ and PMN LDFC Plot." style="width:50.0%" />
 
-<center>
 Figure 3: RVT, RHZ and PMN LDFC Plot.
-</center>
+
 Using R
 -------
 
@@ -122,6 +120,8 @@ fwave <- readWave(file)
 sample_length <- length(fwave@left)/fwave@samp.rate
 chosen_indices <- c("ACI", "ENT", "EVN", "PMN", "RHZ", "RVT")
 ```
+
+Plot the standardised acoustic indices to try and find traces of wildlife. This sample recording was done during the day in the Brisbane Botanic Gardens so there is unlikely to be anything other than a few Ibis calls.
 
 <img src="README_files/figure-markdown_github/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
